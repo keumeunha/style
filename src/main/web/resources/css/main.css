@@ -1,0 +1,49 @@
+@charset "utf-8";
+select{background-color:#fff;font-family:'Noto Sans KR',dotum,'돋움',sans-serif;appearance:none;-webkit-appearance:none;-moz-appearance:none;-webkit-font-smoothing:antialiased;border:none;border-radius:0;margin:0;padding:0;}
+select::-ms-expand {display:none;/* 화살표 없애기 for IE10, 11*/}
+a,input,button,select,label {-webkit-tap-highlight-color:transparent;}
+img, select, input, button { vertical-align:middle; }
+
+.main-search{width:100%; display: block; }
+.m-slogan{display: block; width:100%; padding-top: 40px; height:60px}
+/*검색영역*/
+.ser-area{border:solid 3px #3174B8; border-radius:28px; display: inline-block; padding:11px 55px 11px 15px; background: #fff}
+.ser-area >div{display: inline-block}
+.ser-area select{background: #fff url("../images/main/ico-ser-arrow.png") center right 10px no-repeat; }
+.ser-area select,
+.ser-area input{border:0; height:25px; font-size:1rem;padding:0 10px }
+.ser-area input{width:300px}
+.main-search{background:#F4F4F4; height:214px}
+/*검색영역*/
+
+.w-1200{width:1200px; margin:0 auto}
+.main-con{position: relative}
+.main-con .m-con{ position: relative; width: 100%; min-width: 1200px}
+.main-con .m-con >section{height:600px; max-height: 1200px; padding-top:30px}
+.main-con .m-con >section .con-list{text-align: center; font-size:0; line-height: 0 }
+.main-con .m-con >section .con-list li{display: inline-block; /*overflow: hidden;*/ width:170px; padding: 0 10px; vertical-align:middle }
+
+.main-con .m-con >section .con-list li button{position:relative; display:inline-block; background: #fff; border:solid 1px #BFBFBF; border-radius: 23px; width:100%; height:45px; line-height: 43px; color:#767676; font-size: 1rem; font-weight:600 }
+
+
+.main-con .m-con >section .con-list li.active button,
+.main-con .m-con >section .con-list li button:hover{background:#3174B8; border:solid 1px #3174B8; color:#fff}
+.main-con .m-con >section .con-list li.active button:after,
+.main-con .m-con >section .con-list li button:hover:after{
+    content:'';
+    position:absolute;
+    left:50%;
+    bottom:-11px;
+    width:0;
+    height:0;
+    border-top: 11px solid #3174B8;
+    border-bottom:solid transparent;
+    border-right: 11px solid transparent;
+    border-left: 11px solid transparent;
+    transform: translate(-50%, 1%)
+}
+.main-con .m-con >section .con-list li.active .noti:before{content:''; position:absolute; left:0; top:0; width:100%; height:100%; background:#E4EDF4;
+    z-index: -1;}
+.main-con .m-con >section .con-list li.active .safe:before{content:''; position:absolute; left:0; top:0; width:100%; height:100%; background:linear-gradient(to bottom, #D9EFCF,#D9EFCF 295px,#fff 295px,#fff 482px, #fff 482px, #D9EFCF 300px ); z-index: -1}
+
+.main-con .m-con >section .con-list li>div{}

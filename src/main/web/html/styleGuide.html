@@ -1,13 +1,5260 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
-    <link rel="stylesheet" type="text/css" href="../css/contents.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-</head>
-<body>
-  test입니다
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <script type="text/javascript" src="/resources/js/jquery-1.11.1.js"></script>
+        <link rel="stylesheet" type="text/css" href="//staticnedrug.mfds.go.kr/resources/css/layout_ext.css?v=20200120">
+        <link rel="stylesheet" type="text/css" href="//staticnedrug.mfds.go.kr/resources/css/base.css?v=20200120">
+        <link rel="stylesheet" type="text/css" href="//staticnedrug.mfds.go.kr/resources/css/sang.css?v=20200120">
+        <link rel="stylesheet" type="text/css" href="../resources/css/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    </head>
+    <body>
+    <div class="header_wrap">
+        <header id="header">
+            <!-- <div class="sub-menu-bg" style="height:400px;"></div> -->
+            <!-- lnb -->
+            <div id="lnb" style="margin-right: 130px;">
+                <div class="area">
+                    <ul>
+
+                        <li><a href="/login" title="로그인">로그인</a></li>
+                        <li><a href="/join" title="회원가입">회원가입</a></li>
+
+
+                        <li><a href="/sitemap" title="사이트맵">사이트맵</a></li>
+                        <li><a href="/support" title="고객지원">고객지원</a></li>
+                        <li><a href="/PPFAE10" title="법령/자료실">법령/자료실</a></li>
+                        <li>
+                            <a href="https://blog.naver.com/kfdazzang" title="blog-naver" target="_blank"><span class="sound-only"><img src="/resources/images/layout/sns_n_blog.png" alt="blog-naver" height="26" width="26" style="padding : 0px 3px 0px 0px;"></span></a>
+                            <a href="https://www.facebook.com/mfds" title="facebook" target="_blank"><span class="sound-only"><img src="/resources/images/layout/sns_facebook.png" alt="facebook" height="26" width="26" style="padding : 0px 3px 0px 0px;"></span></a>
+                            <a href="https://twitter.com/themfds" title="twitter" target="_blank"><span class="sound-only"><img src="/resources/images/layout/sns_twitter.png" alt="twitter" height="26" width="26" style="padding : 0px 3px 0px 0px;"></span></a>
+                            <a href="https://www.instagram.com/mfdskorea" title="instagram" target="_blank"><span class="sound-only"><img src="/resources/images/layout/sns_instagram.png" alt="instagram" height="26" width="26" style="padding : 0px 3px 0px 0px;"></span></a>
+                            <a href="https://www.youtube.com/user/theKFDA" title="youtube" target="_blank"><span class="sound-only"><img src="/resources/images/layout/sns_youtube.png" alt="youtube" height="26" width="26" style="padding : 0px 0px 0px 0px;"></span></a>
+                        </li>
+                    </ul>
+                    <button type="button" class="pop-cl on" title="상단 알림창을 닫고 펼칠 수 있는 버튼 입니다.">알림창 <span class="p-o" style="display: inline;">열기</span><span class="p-c" style="display: none;">닫기</span></button>
+                </div>
+            </div>
+            <!-- lnb -->
+            <!-- gnb -->
+            <!--
+                gnb 활성화는 상위 li에 class="active" 모든 요소 동일
+                gnb 메뉴 활성화 처리는 해당 a태그에 class="on" 모든요소 동일
+            -->
+            <!-- th menu -->
+            <div id="gnbStart">
+                <h1><a href="/">식품의약품안전처 의약품통합정보시스템</a></h1>
+                <div class="area">
+                    <nav id="gnb">
+
+                        <ul>
+                            <li class="_main_menu menu_PPA0000">
+
+
+                                <a title="전자민원/보고" href="#gnb">전자민원/보고</a><!-- th:href="${m.path != null? m.path : '#none'}" -->
+                                <!-- <span th:text="${innerMenuCnt / 10}"></span>
+                                <span style="color:red" th:text="${innerMenuCnt}"></span> -->
+                                <div class="gnb-back"></div>
+                                <div class="gnb_wrap">
+                                    <div class="gnb_area new-type">
+                                        <h2 style="display: none;"><span>전자민원/보고</span></h2>
+                                        <a href="/PPA0000" class="sub-main-a"><span title="전자민원/보고">전자민원/보고 서브메인 바로가기</span></a>
+d
+                                        <div class="gnb_detail" style="height:490px">
+
+
+                                            <ul class="new-menu">
+                                                <li class="menu-li fill-height">
+
+
+                                                    <h3>전자민원</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPAAA01">
+
+                                                                <span>전자민원 이용안내</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPAAA03">
+
+                                                                <span>전자결제및수수료안내</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li fill-height">
+
+
+                                                    <h3>전자보고</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPAAB01">
+
+                                                                <span>전자보고이용안내</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li fill-height">
+
+
+                                                    <h3>이상사례</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPAAD01">
+
+                                                                <span>이상사례보고란?</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPAAD02">
+
+                                                                <span>이상사례보고동향</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPAAD03">
+
+                                                                <span>오프라인보고</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPAAD04">
+
+                                                                <span>국내이상사례보고(일반인)</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPAAD16">
+
+                                                                <span>국내이상사례보고(일반인)의약외품</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPAAD08">
+
+                                                                <span>실마리정보알리미</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPAAD09">
+
+                                                                <span>의약품부작용보고원시자료</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+
+
+                                                <li class="menu-li fill-height"> <!-- 네번째 메뉴 영역의 빈 영역 출력 -->
+                                                    &nbsp;
+                                                </li>
+                                            </ul>
+
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+                                        <div class="gnb-s-con" style="display: none">
+                                            <div>
+                                                <dl>
+                                                    <dt><a href=""><img src="//staticnedrug.mfds.go.kr/resources/images/layout/test-img.png" alt="테스트이미지"></a></dt>
+                                                    <dd><span>안전사용교재</span>
+                                                        의약품 안전사용 매뉴얼
+                                                        <a href="">바로가기</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt><a href=""><img src="//staticnedrug.mfds.go.kr/resources/images/layout/test-img1.png" alt="테스트이미지1"></a></dt>
+                                                    <dd><span>약물이상반응</span>약물이상반응 발생시 대처법
+                                                        <a href="">바로가기</a>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+
+                                            <ul>
+                                                <li><a href="" class="g-1">일반의약품</a></li>
+                                                <li><a href="" class="g-2">의약외품</a></li>
+                                                <li><a href="" class="g-3">질환별정보</a></li>
+                                                <li><a href="" class="g-4">안정상비의약품</a></li>
+                                            </ul>
+                                        </div>
+                                        <button type="button" class="close"><span class="cl">닫기</span></button>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="_main_menu menu_PPB0000">
+
+
+                                <a title="의약품등 정보" href="#gnb">의약품등 정보</a><!-- th:href="${m.path != null? m.path : '#none'}" -->
+                                <!-- <span th:text="${innerMenuCnt / 10}"></span>
+                                <span style="color:red" th:text="${innerMenuCnt}"></span> -->
+                                <div class="gnb-back"></div>
+                                <div class="gnb_wrap">
+                                    <div class="gnb_area new-type">
+                                        <h2 style="display: none;"><span>의약품등 정보</span></h2>
+
+
+
+
+                                        <div class="gnb_detail" style="height:710px">
+
+
+                                            <ul class="new-menu flex">
+                                                <li class="menu-li">
+
+
+                                                    <h3>제네릭의약품</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPBAA01">
+
+                                                                <span>제네릭 및 생동성이란</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAA05" title="성분별 생동성시험 권고사항">
+
+                                                                <span>성분별 생동성시험 권고사항</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAA02">
+
+                                                                <span>대조약조회</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAA03">
+
+                                                                <span>생동성인정품목조회</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAA04">
+
+                                                                <span>K-오렌지북</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>임상시험정보</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPBAB01">
+
+                                                                <span>임상시험이란</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAB11">
+
+                                                                <span>임상시험 참여</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAB12">
+
+                                                                <span>임상시험 관련 용어</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAB13">
+
+                                                                <span>임상시험 정보</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAB15">
+
+                                                                <span>임상시험 자료실</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>약물유전정보</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPBAF01">
+
+                                                                <span>약물유전자란</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAF02">
+
+                                                                <span>약물유전자종류</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAF03">
+
+                                                                <span>약물유전자검사시약</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAF04">
+
+                                                                <span>한국인약물유전정보</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAF05">
+
+                                                                <span>주요외국의약물유전정보</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAF08">
+
+                                                                <span>인종/민족별약물반응</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>의약품 및 화장품 품목정보</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPBAC01">
+
+                                                                <span>업체정보</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAC02">
+
+                                                                <span>의약품등 정보검색</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAK05" title="e약은요정보 검색">
+
+                                                                <span>e약은요정보 검색</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAC03">
+
+                                                                <span>의약품(DUR)정보</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAC04">
+
+                                                                <span>기능성화장품제품정보(심사)</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAC05">
+
+                                                                <span>기능성화장품제품정보(보고)</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAC09">
+
+                                                                <span>의약품 등 심사결과정보 공개</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAC08">
+
+                                                                <span>의약품등 해외 제조소 등록 정보</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAC12" title="제네릭의약품 묶음정보">
+
+                                                                <span>제네릭의약품 묶음정보</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAC13">
+
+                                                                <span>원료의약품등록(DMF) 정보</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAC14">
+
+                                                                <span>원료의약품등록(DMF) 공고</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>품목갱신정보</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPBAJ01">
+
+                                                                <span>의약품 품목 갱신 제도란</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAJ02">
+
+                                                                <span>품목유효기간조회</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>국내외 의약품특허정보</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPBAH01">
+
+                                                                <span>의약품특허정보</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAH02">
+
+                                                                <span>해외특허정보</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAH03">
+
+                                                                <span>심판현황</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>바이오의약품</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPBAM11">
+
+                                                                <span>바이오의약품이란?</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAM15">
+
+                                                                <span>스마트정보안내</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAM20">
+
+                                                                <span>산업정보</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAM30">
+
+                                                                <span>인허가규제정보</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAM03">
+
+                                                                <span>글로벌국가정보</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAM27">
+
+                                                                <span>안내데스크</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>의약품 첨가제</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPBAI01">
+
+                                                                <span>첨가제란</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAI02">
+
+                                                                <span>첨가제정보</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAI03">
+
+                                                                <span>첨가제명칭사전</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAI04">
+
+                                                                <span>첨가제배합목적사전</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAI05">
+
+                                                                <span>첨가제배합목적 표준화</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAI06">
+
+                                                                <span>조합향료 목록</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+
+                                                    <h3><a href="/PPBAD00">화장품원료정보</a></h3>
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPBAD01">
+
+                                                                <span>화장품원료성분</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+
+                                                    <h3><a href="/PPBAE00">화장품규제정보</a></h3>
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPBAE01">
+
+                                                                <span>화장품사용제한원료</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAE02">
+
+                                                                <span>화장품국가별규제정보</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAE03">
+
+                                                                <span>화장품비교검색</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>인체조직정보</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPBAL01">
+
+                                                                <span>조직은행허가현황</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAL02">
+
+                                                                <span>수입조직승인현황</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAL03" title="인체조직 수출국 제조원">
+
+                                                                <span>인체조직 수출국 제조원 등록정보</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>의약품등 시판후 안전관리정보</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPBAN01">
+
+                                                                <span>시판 후 안전관리 업무란</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAN02">
+
+                                                                <span>신약 등의 재심사</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAN03">
+
+                                                                <span>위해성관리계획(RMP)</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAN04">
+
+                                                                <span>재평가</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAN05">
+
+                                                                <span>안전성 정보 처리</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>대한민국약전</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPBAG02">
+
+                                                                <span>대한민국약전이란</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAG01">
+
+                                                                <span>최신 개정정보</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAG03">
+
+                                                                <span>12개정 절차 및 주요 개정사항</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAG16">
+
+                                                                <span>개정이력조회</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAG17">
+
+                                                                <span>대한민국전자약전 통합조회</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAG18">
+
+                                                                <span>통칙</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAG21">
+
+                                                                <span>제제총칙</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAG13">
+
+                                                                <span>의약품각조 1부</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAG14">
+
+                                                                <span>의약품각조 2부</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAG15">
+
+                                                                <span>일반시험법</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAG19">
+
+                                                                <span>일반정보</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAG20">
+
+                                                                <span>통합검색</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+
+                                                    <h3><a href="/PPBAK00">기타정보</a></h3>
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPBAK01">
+
+                                                                <span>의약품GMP적합판정서발급현황</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPBAK02">
+
+                                                                <span>화장품 GMP 적합 업체 현황</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+
+
+
+                                            </ul>
+
+                                        </div>
+
+
+
+
+
+
+
+
+                                        <div class="gnb-s-con" style="display: none">
+                                            <div>
+                                                <dl>
+                                                    <dt><a href=""><img src="//staticnedrug.mfds.go.kr/resources/images/layout/test-img.png" alt="테스트이미지"></a></dt>
+                                                    <dd><span>안전사용교재</span>
+                                                        의약품 안전사용 매뉴얼
+                                                        <a href="">바로가기</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt><a href=""><img src="//staticnedrug.mfds.go.kr/resources/images/layout/test-img1.png" alt="테스트이미지1"></a></dt>
+                                                    <dd><span>약물이상반응</span>약물이상반응 발생시 대처법
+                                                        <a href="">바로가기</a>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+
+                                            <ul>
+                                                <li><a href="" class="g-1">일반의약품</a></li>
+                                                <li><a href="" class="g-2">의약외품</a></li>
+                                                <li><a href="" class="g-3">질환별정보</a></li>
+                                                <li><a href="" class="g-4">안정상비의약품</a></li>
+                                            </ul>
+                                        </div>
+                                        <button type="button" class="close"><span class="cl">닫기</span></button>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="_main_menu menu_PPC0000">
+
+
+                                <a title="고시/공고/알림" href="#gnb">고시/공고/알림</a><!-- th:href="${m.path != null? m.path : '#none'}" -->
+                                <!-- <span th:text="${innerMenuCnt / 10}"></span>
+                                <span style="color:red" th:text="${innerMenuCnt}"></span> -->
+                                <div class="gnb-back"></div>
+                                <div class="gnb_wrap">
+                                    <div class="gnb_area new-type">
+                                        <h2 style="display: none;"><span>고시/공고/알림</span></h2>
+
+
+
+
+
+
+
+                                        <div class="gnb_detail" style="height:350px">
+
+
+                                            <ul class="new-menu flex">
+                                                <li class="menu-li">
+
+
+                                                    <h3>코로나19 관련 허가승인현황</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPCAE01">
+
+                                                                <span>보건용마스크·수술용마스크·비말차단용마스크 허가현황</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPCAE02">
+
+                                                                <span>임상시험 계획·결과</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPCAE03">
+
+                                                                <span>코로나 치료제</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPCAE04">
+
+                                                                <span>코로나 백신</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>안전성정보</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPCAA01">
+
+                                                                <span>안전성서한(속보)</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPCAA02">
+
+                                                                <span>회수·폐기</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPCAA03">
+
+                                                                <span>행정처분정보</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPCAA04">
+
+                                                                <span>DUR성분</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPCAA05">
+
+                                                                <span>DUR분할주의</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>의약품안정공급</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPCAB01">
+
+                                                                <span>필수의약품목록</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPCAB03">
+
+                                                                <span>생산/수입/공급중단 보고 대상의약품</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPCAB04">
+
+                                                                <span>생산/수입/공급중단 보고 의약품</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPCAB07">
+
+                                                                <span>생산/수입/공급부족 보고 의약품</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPCAB08" title="차등적용 인정품목 공개">
+
+                                                                <span>차등적용 인정품목 공개</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>의약품허가·승인</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPCAC01">
+
+                                                                <span>품목허가현황</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPCAC04">
+
+                                                                <span>국가출하승인</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPCAC09">
+
+                                                                <span>재평가공고 및 결과공시</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPCAC06">
+
+                                                                <span>변경지시 개요(허가사항)</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPCAC10">
+
+                                                                <span>(구)변경지시</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPCAC12">
+
+                                                                <span>변경명령</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>의약품특허목록</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPCAD01">
+
+                                                                <span>의약품 특허목록</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPCAD02">
+
+                                                                <span>우선판매품목허가 의약품</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPCAD03">
+
+                                                                <span>통지의약품</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPCAD04">
+
+                                                                <span>심판 청구 현황</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+
+
+
+                                            </ul>
+
+                                        </div>
+
+
+
+
+
+                                        <div class="gnb-s-con" style="display: none">
+                                            <div>
+                                                <dl>
+                                                    <dt><a href=""><img src="//staticnedrug.mfds.go.kr/resources/images/layout/test-img.png" alt="테스트이미지"></a></dt>
+                                                    <dd><span>안전사용교재</span>
+                                                        의약품 안전사용 매뉴얼
+                                                        <a href="">바로가기</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt><a href=""><img src="//staticnedrug.mfds.go.kr/resources/images/layout/test-img1.png" alt="테스트이미지1"></a></dt>
+                                                    <dd><span>약물이상반응</span>약물이상반응 발생시 대처법
+                                                        <a href="">바로가기</a>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+
+                                            <ul>
+                                                <li><a href="" class="g-1">일반의약품</a></li>
+                                                <li><a href="" class="g-2">의약외품</a></li>
+                                                <li><a href="" class="g-3">질환별정보</a></li>
+                                                <li><a href="" class="g-4">안정상비의약품</a></li>
+                                            </ul>
+                                        </div>
+                                        <button type="button" class="close"><span class="cl">닫기</span></button>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="_main_menu menu_PPD0000">
+
+
+                                <a title="안전사용정보" href="#gnb">안전사용정보</a><!-- th:href="${m.path != null? m.path : '#none'}" -->
+                                <!-- <span th:text="${innerMenuCnt / 10}"></span>
+                                <span style="color:red" th:text="${innerMenuCnt}"></span> -->
+                                <div class="gnb-back"></div>
+                                <div class="gnb_wrap">
+                                    <div class="gnb_area new-type">
+                                        <h2 style="display: none;"><span>안전사용정보</span></h2>
+                                        <a href="/PPD0000" class="sub-main-a"><span title="안전사용정보">안전사용정보 서브메인 바로가기</span></a>
+
+
+
+
+
+
+
+
+                                        <div class="gnb_detail" style="height:600px">
+
+
+                                            <ul class="new-menu flex">
+                                                <li class="menu-li">
+
+
+                                                    <h3>안전사용주의사항 안내</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPDAA01">
+
+                                                                <span>의약품이란 무엇인가요?</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAA02">
+
+                                                                <span>의약품 안전사용을 위한 주의사항</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>의약품/의약외품</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPDAB01">
+
+                                                                <span>일반의약품</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAB02">
+
+                                                                <span>의약외품</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>약물이상반응</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPDAC01">
+
+                                                                <span>약물이상반응이란?&nbsp;</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAC02">
+
+                                                                <span>주의해야 하는 의약품</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAC03">
+
+                                                                <span>특별히 주의해야 하는 의약품&nbsp;</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAC04">
+
+                                                                <span>의약품에 관한 약물이상반응 및 주의점&nbsp;</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAC05">
+
+                                                                <span>약물이상반응 발생시 대처법</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>오남용 우려 의약품</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPDAP01">
+
+                                                                <span>오남용 우려 의약품</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>의약품제형별 사용정보</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPDAH01">
+
+                                                                <span>의약품제형별 사용정보</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>어르신의약품</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPDAE01">
+
+                                                                <span>약물 복용 시 주요 안전정보</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAE02">
+
+                                                                <span>어르신 신체적 특징</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAE03">
+
+                                                                <span>용법,용량에 영향을 주는 사항</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAE04">
+
+                                                                <span>의약품 사용에 대한 일반 사항</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAE05">
+
+                                                                <span>여러종류 의약품 사용 시 주의점</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAE06">
+
+                                                                <span>의약품의 안전한 처방을 위한 주의사항</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAE07">
+
+                                                                <span>의약품 사용 시 기억해야 할 사항</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAE08">
+
+                                                                <span>의약품 사용 시 알아야 할 사항</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAE09">
+
+                                                                <span>어르신의 의약품 사용 시 나타나는 유해반응 및 주의점</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>임신부/수유부 의약품</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPDAF01">
+
+                                                                <span>임신부 약물복용 시 주요 안전정보</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAF02">
+
+                                                                <span>임신부 의약품 사용 방법 </span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAF03">
+
+                                                                <span>수유부 약물복용 시 주요 안전정보</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAF04">
+
+                                                                <span>수유부 의약품 사용 방법 </span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>어린이의약정보</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPDAG01">
+
+                                                                <span>보호자 공간</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAG02">
+
+                                                                <span>어린이 공간</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>약효군별 정보</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPDAI01">
+
+                                                                <span>개요</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAI02">
+
+                                                                <span>안전정보</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>질환별 정보</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPDAJ01">
+
+                                                                <span>질환별 정보</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>피임제 정보</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPDAK01">
+
+                                                                <span>피임이란</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAK02">
+
+                                                                <span>사전피임제</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAK03">
+
+                                                                <span>응급피임제</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAK04">
+
+                                                                <span>피임제 환자용체크리스트</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAK05">
+
+                                                                <span>피임제 복약설명서</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>항암제 정보</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPDAL01">
+
+                                                                <span>항암제허가정보</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAL02">
+
+                                                                <span>최신항암제 강좌/세미나</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAL03">
+
+                                                                <span>암임상시험 피험자용</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAL04">
+
+                                                                <span>암임상시험검색</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAL05">
+
+                                                                <span>암 관련 사이트</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>의약품상호작용</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPDAD01">
+
+                                                                <span>의약품과 의약품의 상호작용</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAD02">
+
+                                                                <span>의약품과 음식의 상호작용</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAD03">
+
+                                                                <span>의약품과 건강기능식품의 상호작용</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>안전상비의약품</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPDAO01">
+
+                                                                <span>안전상비의약품</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>안전사용교재</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPDAQ01">
+
+                                                                <span>소비자를 위한 의약품 안전정보</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAQ02">
+
+                                                                <span>의약품 안전사용 매뉴얼</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>자가투여주사제안전사용정보</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPDAR01">
+
+                                                                <span>자가투여 주사제 올바르게 사용하기</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPDAR02">
+
+                                                                <span>자가투여 주사제 안전교육</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li">
+
+
+                                                    <h3>생활밀착형의약품사용정보</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPDAS01">
+
+                                                                <span>생활밀착형의약품사용정보</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+
+
+
+                                            </ul>
+
+                                        </div>
+
+
+
+                                        <div class="gnb-s-con" style="display: none">
+                                            <div>
+                                                <dl>
+                                                    <dt><a href=""><img src="//staticnedrug.mfds.go.kr/resources/images/layout/test-img.png" alt="테스트이미지"></a></dt>
+                                                    <dd><span>안전사용교재</span>
+                                                        의약품 안전사용 매뉴얼
+                                                        <a href="">바로가기</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt><a href=""><img src="//staticnedrug.mfds.go.kr/resources/images/layout/test-img1.png" alt="테스트이미지1"></a></dt>
+                                                    <dd><span>약물이상반응</span>약물이상반응 발생시 대처법
+                                                        <a href="">바로가기</a>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+
+                                            <ul>
+                                                <li><a href="" class="g-1">일반의약품</a></li>
+                                                <li><a href="" class="g-2">의약외품</a></li>
+                                                <li><a href="" class="g-3">질환별정보</a></li>
+                                                <li><a href="" class="g-4">안정상비의약품</a></li>
+                                            </ul>
+                                        </div>
+                                        <button type="button" class="close"><span class="cl">닫기</span></button>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="_main_menu menu_PPE0000">
+
+
+                                <a title="공공데이터 정보" href="#gnb">공공데이터 정보</a><!-- th:href="${m.path != null? m.path : '#none'}" -->
+                                <!-- <span th:text="${innerMenuCnt / 10}"></span>
+                                <span style="color:red" th:text="${innerMenuCnt}"></span> -->
+                                <div class="gnb-back"></div>
+                                <div class="gnb_wrap">
+                                    <div class="gnb_area new-type">
+                                        <h2 style="display: none;"><span>공공데이터 정보</span></h2>
+                                        <a href="/PPE0000" class="sub-main-a"><span title="공공데이터 정보">공공데이터 정보 서브메인 바로가기</span></a>
+
+
+
+
+
+
+
+
+
+
+                                        <div class="gnb_detail" style="height:180px">
+
+
+                                            <ul class="new-menu">
+                                                <li class="menu-li fill-height">
+
+
+                                                    <h3>공공데이터</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPEAA01">
+
+                                                                <span>개요</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPEAA02">
+
+                                                                <span>공공데이터 공개</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li fill-height">
+
+
+                                                    <h3>주요 통계</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPEAB01">
+
+                                                                <span>의약관련 업허가 통계</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPEAB03">
+
+                                                                <span>원료의약품(DMF) 통계</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPEAB04">
+
+                                                                <span>품목허가(신고) 통계</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+                                                <li class="menu-li fill-height">
+
+
+                                                    <h3>특허등재 통계</h3>
+
+
+
+
+
+
+
+                                                    <ul>
+                                                        <li>
+
+
+                                                            <a href="/PPEAC01">
+
+                                                                <span>주성분 관련 통계</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPEAC02">
+
+                                                                <span>특허권등재자 관련 통계</span>
+                                                            </a>
+
+                                                        </li>
+                                                        <li>
+
+
+                                                            <a href="/PPEAC03">
+
+                                                                <span>특허존속기간 관련 통계</span>
+                                                            </a>
+
+                                                        </li>
+
+
+
+                                                    </ul>
+
+
+
+                                                </li>
+
+
+                                                <li class="menu-li fill-height"> <!-- 네번째 메뉴 영역의 빈 영역 출력 -->
+                                                    &nbsp;
+                                                </li>
+                                            </ul>
+
+                                        </div>
+
+                                        <div class="gnb-s-con" style="display: none">
+                                            <div>
+                                                <dl>
+                                                    <dt><a href=""><img src="//staticnedrug.mfds.go.kr/resources/images/layout/test-img.png" alt="테스트이미지"></a></dt>
+                                                    <dd><span>안전사용교재</span>
+                                                        의약품 안전사용 매뉴얼
+                                                        <a href="">바로가기</a>
+                                                    </dd>
+                                                </dl>
+                                                <dl>
+                                                    <dt><a href=""><img src="//staticnedrug.mfds.go.kr/resources/images/layout/test-img1.png" alt="테스트이미지1"></a></dt>
+                                                    <dd><span>약물이상반응</span>약물이상반응 발생시 대처법
+                                                        <a href="">바로가기</a>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+
+                                            <ul>
+                                                <li><a href="" class="g-1">일반의약품</a></li>
+                                                <li><a href="" class="g-2">의약외품</a></li>
+                                                <li><a href="" class="g-3">질환별정보</a></li>
+                                                <li><a href="" class="g-4">안정상비의약품</a></li>
+                                            </ul>
+                                        </div>
+                                        <button type="button" class="close"><span class="cl">닫기</span></button>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="_main_menu menu_PPI0000">
+
+                                <a href="/PPI0000" title="사용자별서비스">사용자별서비스</a>
+
+
+                            </li>
+
+
+                        </ul>
+                    </nav>
+                    <div class="total_search"><!-- 20191209 float: right으로 변경됨으로써 위치 변경   // 20200415 웹접근성 위치 다시 수정 -->
+                        <form method="get" action="/search">
+                            <fieldset>
+                                <legend class="hidden">통합검색</legend>
+                                <div class="search-con">
+                                    <button type="button" class="t-search-btn">검색</button><!-- 20200415 웹접근성 위치 다시 수정 -->
+                                    <div>
+                                        <label for="keywordTop" class="hidden">검색어입력</label>
+                                        <input type="text" name="keyword" id="keywordTop" placeholder="검색어를 입력하세요." value="">
+                                        <button type="submit" class="total_search">검색</button>
+                                    </div>
+                                </div>
+
+                            </fieldset>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <!-- //gnb -->
+            <!--mobile-menu-->
+            <nav class="mobile-menu">
+
+                <!--<a href="/login" class="mobile-login" title="Login">Login</a>-->
+
+
+                <a href="#m-menu-list" class="open-m-menu">모바일 메뉴열기</a>
+                <div class="m-menu-back"></div>
+                <div id="m-menu-list">
+                    <h2><button type="button" class="close-m-menu">메뉴닫기</button></h2>
+
+
+                    <!--
+                        20191029
+                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                     -->
+
+
+                    <ul>
+                        <li class="_menu_0 menu_PPA0000  hasChild">
+
+
+                            <a href="/PPA0000" onclick="subMenu(this)">
+                                <span>전자민원/보고</span>
+                            </a>
+
+
+
+                            <!--
+                                20191029
+                                    - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                             -->
+
+
+                            <ul>
+                                <li class="_menu_1 menu_PPAAA00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>전자민원</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPAAA01">
+
+
+                                            <a href="/PPAAA01" onclick="subMenu(this)">
+                                                <span>전자민원 이용안내</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPAAA03">
+
+
+                                            <a href="/PPAAA03" onclick="subMenu(this)">
+                                                <span>전자결제및수수료안내</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPAAB00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>전자보고</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPAAB01">
+
+
+                                            <a href="/PPAAB01" onclick="subMenu(this)">
+                                                <span>전자보고이용안내</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPAAD00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>이상사례</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPAAD01">
+
+
+                                            <a href="/PPAAD01" onclick="subMenu(this)">
+                                                <span>이상사례보고란?</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPAAD02">
+
+
+                                            <a href="/PPAAD02" onclick="subMenu(this)">
+                                                <span>이상사례보고동향</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPAAD03">
+
+
+                                            <a href="/PPAAD03" onclick="subMenu(this)">
+                                                <span>오프라인보고</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPAAD04">
+
+
+                                            <a href="/PPAAD04" onclick="subMenu(this)">
+                                                <span>국내이상사례보고(일반인)</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPAAD16">
+
+
+                                            <a href="/PPAAD16" onclick="subMenu(this)">
+                                                <span>국내이상사례보고(일반인)의약외품</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPAAD08">
+
+
+                                            <a href="/PPAAD08" onclick="subMenu(this)">
+                                                <span>실마리정보알리미</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPAAD09">
+
+
+                                            <a href="/PPAAD09" onclick="subMenu(this)">
+                                                <span>의약품부작용보고원시자료</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                            </ul>
+
+
+
+                        </li>
+                        <li class="_menu_0 menu_PPB0000  hasChild">
+
+
+                            <a href="#none" onclick="subMenu(this)">
+                                <span>의약품등 정보</span>
+                            </a>
+
+
+
+                            <!--
+                                20191029
+                                    - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                             -->
+
+
+                            <ul>
+                                <li class="_menu_1 menu_PPBAA00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>제네릭의약품</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPBAA01  hasChild">
+
+
+                                            <a href="/PPBAA01" onclick="subMenu(this)">
+                                                <span>제네릭 및 생동성이란</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAA05  hasChild">
+
+
+                                            <a href="/PPBAA05" title="성분별 생동성시험 권고사항" onclick="subMenu(this)">
+                                                <span>성분별 생동성시험 권고사항</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAA02">
+
+
+                                            <a href="/PPBAA02" onclick="subMenu(this)">
+                                                <span>대조약조회</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAA03">
+
+
+                                            <a href="/PPBAA03" onclick="subMenu(this)">
+                                                <span>생동성인정품목조회</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAA04">
+
+
+                                            <a href="/PPBAA04" onclick="subMenu(this)">
+                                                <span>K-오렌지북</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPBAB00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>임상시험정보</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPBAB01  hasChild">
+
+
+                                            <a href="/PPBAB01" onclick="subMenu(this)">
+                                                <span>임상시험이란</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAB11  hasChild">
+
+
+                                            <a href="/PPBAB11" onclick="subMenu(this)">
+                                                <span>임상시험 참여</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAB12  hasChild">
+
+
+                                            <a href="/PPBAB12" onclick="subMenu(this)">
+                                                <span>임상시험 관련 용어</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAB13  hasChild">
+
+
+                                            <a href="/PPBAB13" onclick="subMenu(this)">
+                                                <span>임상시험 정보</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAB15  hasChild">
+
+
+                                            <a href="/PPBAB15" onclick="subMenu(this)">
+                                                <span>임상시험 자료실</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPBAF00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>약물유전정보</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPBAF01  hasChild">
+
+
+                                            <a href="/PPBAF01" onclick="subMenu(this)">
+                                                <span>약물유전자란</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAF02">
+
+
+                                            <a href="/PPBAF02" onclick="subMenu(this)">
+                                                <span>약물유전자종류</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAF03">
+
+
+                                            <a href="/PPBAF03" onclick="subMenu(this)">
+                                                <span>약물유전자검사시약</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAF04">
+
+
+                                            <a href="/PPBAF04" onclick="subMenu(this)">
+                                                <span>한국인약물유전정보</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAF05">
+
+
+                                            <a href="/PPBAF05" onclick="subMenu(this)">
+                                                <span>주요외국의약물유전정보</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAF08">
+
+
+                                            <a href="/PPBAF08" onclick="subMenu(this)">
+                                                <span>인종/민족별약물반응</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPBAC00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>의약품 및 화장품 품목정보</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPBAC01">
+
+
+                                            <a href="/PPBAC01" onclick="subMenu(this)">
+                                                <span>업체정보</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAC02">
+
+
+                                            <a href="/PPBAC02" onclick="subMenu(this)">
+                                                <span>의약품등 정보검색</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAK05">
+
+
+                                            <a href="/PPBAK05" title="e약은요정보 검색" onclick="subMenu(this)">
+                                                <span>e약은요정보 검색</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAC03">
+
+
+                                            <a href="/PPBAC03" onclick="subMenu(this)">
+                                                <span>의약품(DUR)정보</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAC04">
+
+
+                                            <a href="/PPBAC04" onclick="subMenu(this)">
+                                                <span>기능성화장품제품정보(심사)</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAC05">
+
+
+                                            <a href="/PPBAC05" onclick="subMenu(this)">
+                                                <span>기능성화장품제품정보(보고)</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAC09">
+
+
+                                            <a href="/PPBAC09" onclick="subMenu(this)">
+                                                <span>의약품 등 심사결과정보 공개</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAC08">
+
+
+                                            <a href="/PPBAC08" onclick="subMenu(this)">
+                                                <span>의약품등 해외 제조소 등록 정보</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAC12">
+
+
+                                            <a href="/PPBAC12" title="제네릭의약품 묶음정보" onclick="subMenu(this)">
+                                                <span>제네릭의약품 묶음정보</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAC13">
+
+
+                                            <a href="/PPBAC13" onclick="subMenu(this)">
+                                                <span>원료의약품등록(DMF) 정보</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAC14">
+
+
+                                            <a href="/PPBAC14" onclick="subMenu(this)">
+                                                <span>원료의약품등록(DMF) 공고</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPBAJ00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>품목갱신정보</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPBAJ01">
+
+
+                                            <a href="/PPBAJ01" onclick="subMenu(this)">
+                                                <span>의약품 품목 갱신 제도란</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAJ02">
+
+
+                                            <a href="/PPBAJ02" onclick="subMenu(this)">
+                                                <span>품목유효기간조회</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPBAH00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>국내외 의약품특허정보</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPBAH01">
+
+
+                                            <a href="/PPBAH01" onclick="subMenu(this)">
+                                                <span>의약품특허정보</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAH02">
+
+
+                                            <a href="/PPBAH02" onclick="subMenu(this)">
+                                                <span>해외특허정보</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAH03">
+
+
+                                            <a href="/PPBAH03" onclick="subMenu(this)">
+                                                <span>심판현황</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPBAM00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>바이오의약품</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPBAM11">
+
+
+                                            <a href="/PPBAM11" onclick="subMenu(this)">
+                                                <span>바이오의약품이란?</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAM15">
+
+
+                                            <a href="/PPBAM15" onclick="subMenu(this)">
+                                                <span>스마트정보안내</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAM20  hasChild">
+
+
+                                            <a href="/PPBAM20" onclick="subMenu(this)">
+                                                <span>산업정보</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAM30  hasChild">
+
+
+                                            <a href="/PPBAM30" onclick="subMenu(this)">
+                                                <span>인허가규제정보</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAM03  hasChild">
+
+
+                                            <a href="/PPBAM03" onclick="subMenu(this)">
+                                                <span>글로벌국가정보</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAM27  hasChild">
+
+
+                                            <a href="/PPBAM27" onclick="subMenu(this)">
+                                                <span>안내데스크</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPBAI00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>의약품 첨가제</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPBAI01  hasChild">
+
+
+                                            <a href="/PPBAI01" onclick="subMenu(this)">
+                                                <span>첨가제란</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAI02">
+
+
+                                            <a href="/PPBAI02" onclick="subMenu(this)">
+                                                <span>첨가제정보</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAI03">
+
+
+                                            <a href="/PPBAI03" onclick="subMenu(this)">
+                                                <span>첨가제명칭사전</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAI04">
+
+
+                                            <a href="/PPBAI04" onclick="subMenu(this)">
+                                                <span>첨가제배합목적사전</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAI05">
+
+
+                                            <a href="/PPBAI05" onclick="subMenu(this)">
+                                                <span>첨가제배합목적 표준화</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAI06">
+
+
+                                            <a href="/PPBAI06" onclick="subMenu(this)">
+                                                <span>조합향료 목록</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPBAD00  hasChild">
+
+
+                                    <a href="/PPBAD00" onclick="subMenu(this)">
+                                        <span>화장품원료정보</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPBAD01">
+
+
+                                            <a href="/PPBAD01" onclick="subMenu(this)">
+                                                <span>화장품원료성분</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPBAE00  hasChild">
+
+
+                                    <a href="/PPBAE00" onclick="subMenu(this)">
+                                        <span>화장품규제정보</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPBAE01">
+
+
+                                            <a href="/PPBAE01" onclick="subMenu(this)">
+                                                <span>화장품사용제한원료</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAE02">
+
+
+                                            <a href="/PPBAE02" onclick="subMenu(this)">
+                                                <span>화장품국가별규제정보</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAE03">
+
+
+                                            <a href="/PPBAE03" onclick="subMenu(this)">
+                                                <span>화장품비교검색</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPBAL00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>인체조직정보</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPBAL01">
+
+
+                                            <a href="/PPBAL01" onclick="subMenu(this)">
+                                                <span>조직은행허가현황</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAL02">
+
+
+                                            <a href="/PPBAL02" onclick="subMenu(this)">
+                                                <span>수입조직승인현황</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAL03">
+
+
+                                            <a href="/PPBAL03" title="인체조직 수출국 제조원" onclick="subMenu(this)">
+                                                <span>인체조직 수출국 제조원 등록정보</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPBAN00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>의약품등 시판후 안전관리정보</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPBAN01">
+
+
+                                            <a href="/PPBAN01" onclick="subMenu(this)">
+                                                <span>시판 후 안전관리 업무란</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAN02  hasChild">
+
+
+                                            <a href="/PPBAN02" onclick="subMenu(this)">
+                                                <span>신약 등의 재심사</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAN03">
+
+
+                                            <a href="/PPBAN03" onclick="subMenu(this)">
+                                                <span>위해성관리계획(RMP)</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAN04">
+
+
+                                            <a href="/PPBAN04" onclick="subMenu(this)">
+                                                <span>재평가</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAN05">
+
+
+                                            <a href="/PPBAN05" onclick="subMenu(this)">
+                                                <span>안전성 정보 처리</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPBAG00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>대한민국약전</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPBAG02">
+
+
+                                            <a href="/PPBAG02" onclick="subMenu(this)">
+                                                <span>대한민국약전이란</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAG01">
+
+
+                                            <a href="/PPBAG01" onclick="subMenu(this)">
+                                                <span>최신 개정정보</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAG03">
+
+
+                                            <a href="/PPBAG03" onclick="subMenu(this)">
+                                                <span>12개정 절차 및 주요 개정사항</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAG16">
+
+
+                                            <a href="/PPBAG16" onclick="subMenu(this)">
+                                                <span>개정이력조회</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAG17">
+
+
+                                            <a href="/PPBAG17" onclick="subMenu(this)">
+                                                <span>대한민국전자약전 통합조회</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAG18">
+
+
+                                            <a href="/PPBAG18" onclick="subMenu(this)">
+                                                <span>통칙</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAG21">
+
+
+                                            <a href="/PPBAG21" onclick="subMenu(this)">
+                                                <span>제제총칙</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAG13">
+
+
+                                            <a href="/PPBAG13" onclick="subMenu(this)">
+                                                <span>의약품각조 1부</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAG14">
+
+
+                                            <a href="/PPBAG14" onclick="subMenu(this)">
+                                                <span>의약품각조 2부</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAG15">
+
+
+                                            <a href="/PPBAG15" onclick="subMenu(this)">
+                                                <span>일반시험법</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAG19">
+
+
+                                            <a href="/PPBAG19" onclick="subMenu(this)">
+                                                <span>일반정보</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAG20">
+
+
+                                            <a href="/PPBAG20" onclick="subMenu(this)">
+                                                <span>통합검색</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPBAK00  hasChild">
+
+
+                                    <a href="/PPBAK00" onclick="subMenu(this)">
+                                        <span>기타정보</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPBAK01">
+
+
+                                            <a href="/PPBAK01" onclick="subMenu(this)">
+                                                <span>의약품GMP적합판정서발급현황</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPBAK02">
+
+
+                                            <a href="/PPBAK02" onclick="subMenu(this)">
+                                                <span>화장품 GMP 적합 업체 현황</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                            </ul>
+
+
+
+                        </li>
+                        <li class="_menu_0 menu_PPC0000  hasChild">
+
+
+                            <a href="#none" onclick="subMenu(this)">
+                                <span>고시/공고/알림</span>
+                            </a>
+
+
+
+                            <!--
+                                20191029
+                                    - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                             -->
+
+
+                            <ul>
+                                <li class="_menu_1 menu_PPCAE00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>코로나19 관련 허가승인현황</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPCAE01">
+
+
+                                            <a href="/PPCAE01" onclick="subMenu(this)">
+                                                <span>보건용마스크·수술용마스크·비말차단용마스크 허가현황</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPCAE02">
+
+
+                                            <a href="/PPCAE02" onclick="subMenu(this)">
+                                                <span>임상시험 계획·결과</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPCAE03">
+
+
+                                            <a href="/PPCAE03" onclick="subMenu(this)">
+                                                <span>코로나 치료제</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPCAE04">
+
+
+                                            <a href="/PPCAE04" onclick="subMenu(this)">
+                                                <span>코로나 백신</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPCAA00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>안전성정보</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPCAA01">
+
+
+                                            <a href="/PPCAA01" onclick="subMenu(this)">
+                                                <span>안전성서한(속보)</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPCAA02">
+
+
+                                            <a href="/PPCAA02" onclick="subMenu(this)">
+                                                <span>회수·폐기</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPCAA03">
+
+
+                                            <a href="/PPCAA03" onclick="subMenu(this)">
+                                                <span>행정처분정보</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPCAA04">
+
+
+                                            <a href="/PPCAA04" onclick="subMenu(this)">
+                                                <span>DUR성분</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPCAA05">
+
+
+                                            <a href="/PPCAA05" onclick="subMenu(this)">
+                                                <span>DUR분할주의</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPCAB00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>의약품안정공급</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPCAB01">
+
+
+                                            <a href="/PPCAB01" onclick="subMenu(this)">
+                                                <span>필수의약품목록</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPCAB03">
+
+
+                                            <a href="/PPCAB03" onclick="subMenu(this)">
+                                                <span>생산/수입/공급중단 보고 대상의약품</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPCAB04">
+
+
+                                            <a href="/PPCAB04" onclick="subMenu(this)">
+                                                <span>생산/수입/공급중단 보고 의약품</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPCAB07">
+
+
+                                            <a href="/PPCAB07" onclick="subMenu(this)">
+                                                <span>생산/수입/공급부족 보고 의약품</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPCAB08">
+
+
+                                            <a href="/PPCAB08" title="차등적용 인정품목 공개" onclick="subMenu(this)">
+                                                <span>차등적용 인정품목 공개</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPCAC00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>의약품허가·승인</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPCAC01">
+
+
+                                            <a href="/PPCAC01" onclick="subMenu(this)">
+                                                <span>품목허가현황</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPCAC04">
+
+
+                                            <a href="/PPCAC04" onclick="subMenu(this)">
+                                                <span>국가출하승인</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPCAC09">
+
+
+                                            <a href="/PPCAC09" onclick="subMenu(this)">
+                                                <span>재평가공고 및 결과공시</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPCAC06">
+
+
+                                            <a href="/PPCAC06" onclick="subMenu(this)">
+                                                <span>변경지시 개요(허가사항)</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPCAC10">
+
+
+                                            <a href="/PPCAC10" onclick="subMenu(this)">
+                                                <span>(구)변경지시</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPCAC12">
+
+
+                                            <a href="/PPCAC12" onclick="subMenu(this)">
+                                                <span>변경명령</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPCAD00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>의약품특허목록</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPCAD01">
+
+
+                                            <a href="/PPCAD01" onclick="subMenu(this)">
+                                                <span>의약품 특허목록</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPCAD02">
+
+
+                                            <a href="/PPCAD02" onclick="subMenu(this)">
+                                                <span>우선판매품목허가 의약품</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPCAD03">
+
+
+                                            <a href="/PPCAD03" onclick="subMenu(this)">
+                                                <span>통지의약품</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPCAD04">
+
+
+                                            <a href="/PPCAD04" onclick="subMenu(this)">
+                                                <span>심판 청구 현황</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                            </ul>
+
+
+
+                        </li>
+                        <li class="_menu_0 menu_PPD0000  hasChild">
+
+
+                            <a href="/PPD0000" onclick="subMenu(this)">
+                                <span>안전사용정보</span>
+                            </a>
+
+
+
+                            <!--
+                                20191029
+                                    - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                             -->
+
+
+                            <ul>
+                                <li class="_menu_1 menu_PPDAA00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>안전사용주의사항 안내</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPDAA01">
+
+
+                                            <a href="/PPDAA01" onclick="subMenu(this)">
+                                                <span>의약품이란 무엇인가요?</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAA02">
+
+
+                                            <a href="/PPDAA02" onclick="subMenu(this)">
+                                                <span>의약품 안전사용을 위한 주의사항</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPDAB00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>의약품/의약외품</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPDAB01  hasChild">
+
+
+                                            <a href="/PPDAB01" onclick="subMenu(this)">
+                                                <span>일반의약품</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAB02  hasChild">
+
+
+                                            <a href="/PPDAB02" onclick="subMenu(this)">
+                                                <span>의약외품</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPDAC00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>약물이상반응</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPDAC01">
+
+
+                                            <a href="/PPDAC01" onclick="subMenu(this)">
+                                                <span>약물이상반응이란?&nbsp;</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAC02">
+
+
+                                            <a href="/PPDAC02" onclick="subMenu(this)">
+                                                <span>주의해야 하는 의약품</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAC03">
+
+
+                                            <a href="/PPDAC03" onclick="subMenu(this)">
+                                                <span>특별히 주의해야 하는 의약품&nbsp;</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAC04">
+
+
+                                            <a href="/PPDAC04" onclick="subMenu(this)">
+                                                <span>의약품에 관한 약물이상반응 및 주의점&nbsp;</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAC05">
+
+
+                                            <a href="/PPDAC05" onclick="subMenu(this)">
+                                                <span>약물이상반응 발생시 대처법</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPDAP00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>오남용 우려 의약품</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPDAP01">
+
+
+                                            <a href="/PPDAP01" onclick="subMenu(this)">
+                                                <span>오남용 우려 의약품</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPDAH00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>의약품제형별 사용정보</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPDAH01">
+
+
+                                            <a href="/PPDAH01" onclick="subMenu(this)">
+                                                <span>의약품제형별 사용정보</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPDAE00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>어르신의약품</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPDAE01">
+
+
+                                            <a href="/PPDAE01" onclick="subMenu(this)">
+                                                <span>약물 복용 시 주요 안전정보</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAE02">
+
+
+                                            <a href="/PPDAE02" onclick="subMenu(this)">
+                                                <span>어르신 신체적 특징</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAE03">
+
+
+                                            <a href="/PPDAE03" onclick="subMenu(this)">
+                                                <span>용법,용량에 영향을 주는 사항</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAE04">
+
+
+                                            <a href="/PPDAE04" onclick="subMenu(this)">
+                                                <span>의약품 사용에 대한 일반 사항</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAE05">
+
+
+                                            <a href="/PPDAE05" onclick="subMenu(this)">
+                                                <span>여러종류 의약품 사용 시 주의점</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAE06">
+
+
+                                            <a href="/PPDAE06" onclick="subMenu(this)">
+                                                <span>의약품의 안전한 처방을 위한 주의사항</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAE07">
+
+
+                                            <a href="/PPDAE07" onclick="subMenu(this)">
+                                                <span>의약품 사용 시 기억해야 할 사항</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAE08">
+
+
+                                            <a href="/PPDAE08" onclick="subMenu(this)">
+                                                <span>의약품 사용 시 알아야 할 사항</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAE09">
+
+
+                                            <a href="/PPDAE09" onclick="subMenu(this)">
+                                                <span>어르신의 의약품 사용 시 나타나는 유해반응 및 주의점</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPDAF00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>임신부/수유부 의약품</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPDAF01">
+
+
+                                            <a href="/PPDAF01" onclick="subMenu(this)">
+                                                <span>임신부 약물복용 시 주요 안전정보</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAF02">
+
+
+                                            <a href="/PPDAF02" onclick="subMenu(this)">
+                                                <span>임신부 의약품 사용 방법 </span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAF03">
+
+
+                                            <a href="/PPDAF03" onclick="subMenu(this)">
+                                                <span>수유부 약물복용 시 주요 안전정보</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAF04">
+
+
+                                            <a href="/PPDAF04" onclick="subMenu(this)">
+                                                <span>수유부 의약품 사용 방법 </span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPDAG00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>어린이의약정보</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPDAG01  hasChild">
+
+
+                                            <a href="/PPDAG01" onclick="subMenu(this)">
+                                                <span>보호자 공간</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAG02  hasChild">
+
+
+                                            <a href="/PPDAG02" onclick="subMenu(this)">
+                                                <span>어린이 공간</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPDAI00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>약효군별 정보</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPDAI01">
+
+
+                                            <a href="/PPDAI01" onclick="subMenu(this)">
+                                                <span>개요</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAI02  hasChild">
+
+
+                                            <a href="/PPDAI02" onclick="subMenu(this)">
+                                                <span>안전정보</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPDAJ00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>질환별 정보</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPDAJ01">
+
+
+                                            <a href="/PPDAJ01" onclick="subMenu(this)">
+                                                <span>질환별 정보</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPDAK00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>피임제 정보</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPDAK01">
+
+
+                                            <a href="/PPDAK01" onclick="subMenu(this)">
+                                                <span>피임이란</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAK02  hasChild">
+
+
+                                            <a href="/PPDAK02" onclick="subMenu(this)">
+                                                <span>사전피임제</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAK03  hasChild">
+
+
+                                            <a href="/PPDAK03" onclick="subMenu(this)">
+                                                <span>응급피임제</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAK04">
+
+
+                                            <a href="/PPDAK04" onclick="subMenu(this)">
+                                                <span>피임제 환자용체크리스트</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAK05  hasChild">
+
+
+                                            <a href="/PPDAK05" onclick="subMenu(this)">
+                                                <span>피임제 복약설명서</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPDAL00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>항암제 정보</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPDAL01">
+
+
+                                            <a href="/PPDAL01" onclick="subMenu(this)">
+                                                <span>항암제허가정보</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAL02">
+
+
+                                            <a href="/PPDAL02" onclick="subMenu(this)">
+                                                <span>최신항암제 강좌/세미나</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAL03">
+
+
+                                            <a href="/PPDAL03" onclick="subMenu(this)">
+                                                <span>암임상시험 피험자용</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAL04">
+
+
+                                            <a href="/PPDAL04" onclick="subMenu(this)">
+                                                <span>암임상시험검색</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAL05  hasChild">
+
+
+                                            <a href="/PPDAL05" onclick="subMenu(this)">
+                                                <span>암 관련 사이트</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPDAD00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>의약품상호작용</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPDAD01">
+
+
+                                            <a href="/PPDAD01" onclick="subMenu(this)">
+                                                <span>의약품과 의약품의 상호작용</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAD02">
+
+
+                                            <a href="/PPDAD02" onclick="subMenu(this)">
+                                                <span>의약품과 음식의 상호작용</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAD03">
+
+
+                                            <a href="/PPDAD03" onclick="subMenu(this)">
+                                                <span>의약품과 건강기능식품의 상호작용</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPDAO00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>안전상비의약품</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPDAO01">
+
+
+                                            <a href="/PPDAO01" onclick="subMenu(this)">
+                                                <span>안전상비의약품</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPDAQ00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>안전사용교재</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPDAQ01">
+
+
+                                            <a href="/PPDAQ01" onclick="subMenu(this)">
+                                                <span>소비자를 위한 의약품 안전정보</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAQ02">
+
+
+                                            <a href="/PPDAQ02" onclick="subMenu(this)">
+                                                <span>의약품 안전사용 매뉴얼</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPDAR00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>자가투여주사제안전사용정보</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPDAR01">
+
+
+                                            <a href="/PPDAR01" onclick="subMenu(this)">
+                                                <span>자가투여 주사제 올바르게 사용하기</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPDAR02">
+
+
+                                            <a href="/PPDAR02" onclick="subMenu(this)">
+                                                <span>자가투여 주사제 안전교육</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPDAS00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>생활밀착형의약품사용정보</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPDAS01">
+
+
+                                            <a href="/PPDAS01" onclick="subMenu(this)">
+                                                <span>생활밀착형의약품사용정보</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                            </ul>
+
+
+
+                        </li>
+                        <li class="_menu_0 menu_PPE0000  hasChild">
+
+
+                            <a href="/PPE0000" onclick="subMenu(this)">
+                                <span>공공데이터 정보</span>
+                            </a>
+
+
+
+                            <!--
+                                20191029
+                                    - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                             -->
+
+
+                            <ul>
+                                <li class="_menu_1 menu_PPEAA00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>공공데이터</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPEAA01">
+
+
+                                            <a href="/PPEAA01" onclick="subMenu(this)">
+                                                <span>개요</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPEAA02">
+
+
+                                            <a href="/PPEAA02" onclick="subMenu(this)">
+                                                <span>공공데이터 공개</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPEAB00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>주요 통계</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPEAB01">
+
+
+                                            <a href="/PPEAB01" onclick="subMenu(this)">
+                                                <span>의약관련 업허가 통계</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPEAB03">
+
+
+                                            <a href="/PPEAB03" onclick="subMenu(this)">
+                                                <span>원료의약품(DMF) 통계</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPEAB04">
+
+
+                                            <a href="/PPEAB04" onclick="subMenu(this)">
+                                                <span>품목허가(신고) 통계</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPEAC00  hasChild">
+
+
+                                    <a href="#none" onclick="subMenu(this)">
+                                        <span>특허등재 통계</span>
+                                    </a>
+
+
+
+                                    <!--
+                                        20191029
+                                            - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                                     -->
+
+
+                                    <ul>
+                                        <li class="_menu_2 menu_PPEAC01">
+
+
+                                            <a href="/PPEAC01" onclick="subMenu(this)">
+                                                <span>주성분 관련 통계</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPEAC02">
+
+
+                                            <a href="/PPEAC02" onclick="subMenu(this)">
+                                                <span>특허권등재자 관련 통계</span>
+                                            </a>
+
+
+                                        </li>
+                                        <li class="_menu_2 menu_PPEAC03">
+
+
+                                            <a href="/PPEAC03" onclick="subMenu(this)">
+                                                <span>특허존속기간 관련 통계</span>
+                                            </a>
+
+
+                                        </li>
+                                    </ul>
+
+
+
+                                </li>
+                            </ul>
+
+
+
+                        </li>
+                        <li class="_menu_0 menu_PPI0000  hasChild">
+
+
+                            <a href="#none" onclick="subMenu(this)">
+                                <span>사용자별서비스</span>
+                            </a>
+
+
+
+                            <!--
+                                20191029
+                                    - notOutputChildArr : 하위메뉴가 추가되지 않을 메뉴 리스트(하위메뉴를 포함하면서 링크가 연결된 메뉴) 추가
+                             -->
+
+
+                            <ul>
+                                <li class="_menu_1 menu_PPIAA00">
+
+
+                                    <a href="/PPIAA00" onclick="subMenu(this)">
+                                        <span>일반소비자</span>
+                                    </a>
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPIAB00">
+
+
+                                    <a href="/PPIAB00" onclick="subMenu(this)">
+                                        <span>의약전문가</span>
+                                    </a>
+
+
+                                </li>
+                                <li class="_menu_1 menu_PPIAC00">
+
+
+                                    <a href="/PPIAC00" onclick="subMenu(this)">
+                                        <span>제조·유통사</span>
+                                    </a>
+
+
+                                </li>
+                            </ul>
+
+
+
+                        </li>
+                        <li class="_menu_0 menu_PPL0000">
+
+
+                            <a href="/PPL0000" onclick="subMenu(this)">
+                                <span>의약품등 검색</span>
+                            </a>
+
+
+                        </li>
+                        <li class="_menu_0 menu_PPM0000">
+
+
+                            <a href="#none" onclick="subMenu(this)">
+                                <span>고시/공고알림</span>
+                            </a>
+
+
+                        </li>
+                    </ul>
+
+
+                </div>
+            </nav>
+        </header>
+        <div class="main-search">
+            <div class="w-1200">
+                <div class="m-slogan">
+                   <p>국민을 위한 의약품 안전 길라잡이</p>
+                    <p>의약품 안전나라</p>
+                </div>
+                <div class="ser-area">
+                    <div>
+                        <label for="searchItemType" class="hidden">의약품분야 검색구분</label>
+                        <select onchange="setMainSearchType(this);" id="searchItemType">
+                            <option value="1">의약품등 제품정보</option>
+                            <option value="2">DUR 품목</option>
+                            <option value="3">K-오렌지북</option>
+                            <option value="4">특허목록</option>
+                            <option value="5">임상시험정보</option>
+                            <option value="6">제네릭의약품묶음정보</option>
+                            <option value="7">e약은요정보</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="itemName" class="hidden">의약품검색어입력</label>
+                        <input type="text" id="itemName" title="의약품검색어입력창" name="itemName" placeholder="처방ㆍ복용중인 의약품이 궁금하시나요">
+                        <button ><span class="hidden">검색</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-con">
+            <div class="m-con">
+                <section>
+                    <ul class="con-list">
+                        <li class="active tab1">
+                            <button class="btn">전문가</button>
+                            <div class="noti">
+                                <ul>
+                                    <li>
+                                        <a href="">공지사항</a>
+                                    </li>
+                                    <li>
+                                        <a href="">회수/판매중지</a>
+                                    </li>
+                                    <li>
+                                        <a href="">안전성서한속보</a>
+                                    </li>
+                                    <li>
+                                        <a href="">행정처분정보</a>
+                                    </li>
+                                    <li>
+                                        <a href="">품목허가정보</a>
+                                    </li>
+                                    <li>
+                                        <a href="">DUR 성분고시</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="tab2">
+                            <button>안전사용정보</button>
+                            <div class="safe"  style="display: none">
+
+
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+    </body>
 </html>
