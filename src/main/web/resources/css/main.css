@@ -23,13 +23,13 @@ img, select, input, button { vertical-align:middle; }
 .main-con .m-con >section .con-list{text-align: center; font-size:0; line-height: 0 }
 .main-con .m-con >section .con-list li{display: inline-block; /*overflow: hidden;*/ width:170px; padding: 0 10px; vertical-align:middle }
 
-.main-con .m-con >section .con-list li button{position:relative; display:inline-block; background: #fff; border:solid 1px #BFBFBF; border-radius: 23px; width:100%; height:45px; line-height: 43px; color:#767676; font-size: 1rem; font-weight:600 }
+.main-con .m-con >section .con-list li > a{position:relative; display:inline-block; background: #fff; border:solid 1px #BFBFBF; border-radius: 23px; width:100%; height:45px; line-height: 43px; color:#767676; font-size: 1rem; font-weight:600 }
 
 
-.main-con .m-con >section .con-list li.active button,
-.main-con .m-con >section .con-list li button:hover{background:#3174B8; border:solid 1px #3174B8; color:#fff}
-.main-con .m-con >section .con-list li.active button:after,
-.main-con .m-con >section .con-list li button:hover:after{
+.main-con .m-con >section .con-list li.active > a,
+.main-con .m-con >section .con-list li a:hover{background:#3174B8; border:solid 1px #3174B8; color:#fff}
+.main-con .m-con >section .con-list li.active > a:after,
+.main-con .m-con >section .con-list li > a:hover:after{
     content:'';
     position:absolute;
     left:50%;
@@ -42,8 +42,15 @@ img, select, input, button { vertical-align:middle; }
     border-left: 11px solid transparent;
     transform: translate(-50%, 1%)
 }
-.main-con .m-con >section .con-list li.active .noti:before{content:''; position:absolute; left:0; top:0; width:100%; height:100%; background:#E4EDF4;
-    z-index: -1;}
-.main-con .m-con >section .con-list li.active .safe:before{content:''; position:absolute; left:0; top:0; width:100%; height:100%; background:linear-gradient(to bottom, #D9EFCF,#D9EFCF 295px,#fff 295px,#fff 482px, #fff 482px, #D9EFCF 300px ); z-index: -1}
+.main-con .m-con >section .noti:before,
+.main-con .m-con >section .safe:before{content:''; position:absolute; left:0; top:0; width:100%; height:100%;  z-index: -1;}
+.main-con .m-con >section .noti:before{background:#E4EDF4;}
+.main-con .m-con >section .safe:before{background:linear-gradient(to bottom, #D9EFCF,#D9EFCF 295px,#fff 295px,#fff 482px, #fff 482px, #D9EFCF 300px );}
 
 .main-con .m-con >section .con-list li>div{}
+
+.noti-area ul{display: flex; margin-top: 30px}
+
+.noti-area ul li{padding:0 10px; height:50px}
+.noti-area ul li a{display: block; font-size: 1rem}
+

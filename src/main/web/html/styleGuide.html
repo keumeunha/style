@@ -3,11 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <title>Title</title>
-        <script type="text/javascript" src="/resources/js/jquery-1.11.1.js"></script>
+        <script type="text/javascript" src="../resources/js/jquery-1.11.1.js"></script>
         <link rel="stylesheet" type="text/css" href="//staticnedrug.mfds.go.kr/resources/css/layout_ext.css?v=20200120">
         <link rel="stylesheet" type="text/css" href="//staticnedrug.mfds.go.kr/resources/css/base.css?v=20200120">
         <link rel="stylesheet" type="text/css" href="//staticnedrug.mfds.go.kr/resources/css/sang.css?v=20200120">
         <link rel="stylesheet" type="text/css" href="../resources/css/main.css">
+        <script type="text/javascript" src="../resources/js/main.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
     </head>
     <body>
@@ -5216,45 +5217,73 @@ d
         </div>
         <div class="main-con">
             <div class="m-con">
-                <section>
-                    <ul class="con-list">
-                        <li class="active tab1">
-                            <button class="btn">전문가</button>
-                            <div class="noti">
-                                <ul>
-                                    <li>
-                                        <a href="">공지사항</a>
-                                    </li>
-                                    <li>
-                                        <a href="">회수/판매중지</a>
-                                    </li>
-                                    <li>
-                                        <a href="">안전성서한속보</a>
-                                    </li>
-                                    <li>
-                                        <a href="">행정처분정보</a>
-                                    </li>
-                                    <li>
-                                        <a href="">품목허가정보</a>
-                                    </li>
-                                    <li>
-                                        <a href="">DUR 성분고시</a>
-                                    </li>
-
-                                </ul>
+                <section class="tab_container">
+                    <div class="tab">
+                        <ul class="con-list ">
+                            <li class="active">
+                                <a href="#"  rel="tab1">전문가</a>
+                            </li>
+                            <li>
+                                <a  href="#" rel="tab2">안전사용정보</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="noti tab_content" id="tab1">
+                        <div class="w-1200">
+                            <div  class="tabArea">
+                                <div class="tab noti-area">
+                                    <ul>
+                                        <li  class="active">
+                                            <a href="">공지사항</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">회수/판매중지</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">안전성서한속보</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">행정처분정보</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">품목허가정보</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">DUR 성분고시</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-con" id="tab3">
+                                    tabs3영역입니다
+                                </div>
+                                <div class="tab-con" id="tab4">
+                                    tabs4영역입니다
+                                </div>
+                                <div class="tab-con" id="tab5">
+                                    tabs5영역입니다
+                                </div>
+                                <div class="tab-con" id="tab6">
+                                    tabs6영역입니다
+                                </div>
+                                <div class="tab-con" id="tab7">
+                                    tabs7영역입니다
+                                </div>
+                                <div class="tab-con" id="tab8">
+                                    tabs8영역입니다
+                                </div>
                             </div>
-                        </li>
-                        <li class="tab2">
-                            <button>안전사용정보</button>
-                            <div class="safe"  style="display: none">
-
-
+                        </div>
+                    </div>
+                    <div class="safe tab_content" id="tab2">
+                        <div class="w-1200">
+                            <div>
+                                tabs2영역입니다
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </section>
             </div>
         </div>
-    </div>
+     </div>
     </body>
 </html>
